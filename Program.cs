@@ -1,21 +1,20 @@
 ﻿using System;
+using System.Text;
 
-namespace Task_dev_1
+namespace Task_dev_2
 {
     /// <summary>
-    /// This is the input point of the program.
+    /// This class is the entry point to the program
     /// </summary>
     class EntryPoint
     {
         /// <summary>
-        /// This is the input point of the program.
+        /// The entry point to the program
         /// </summary>
-        /// <param name="args">String to input</param>
-        static void Main(string[] args)
+        static void Main()
         {
-            RepeatingSymbols inputString = new RepeatingSymbols(args[0]);
-            Console.WriteLine(inputString.MaxNumberRepeatingSymbols());
-            Console.ReadKey();
+            Builder inputString = new Builder(Console.ReadLine());
+            Console.WriteLine(inputString.FindSequenceOfEvenIndex());
         }
     }
 }
