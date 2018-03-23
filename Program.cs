@@ -1,42 +1,21 @@
 ﻿using System;
+using System.Text;
 
-namespace Task_dev_3
+namespace Task_Dev2
 {
     /// <summary>
-    /// This is the entry point of the program.
+    /// This class is the entry point to the program
     /// </summary>
     class EntryPoint
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The entry point to the program
+        /// </summary>
+        static void Main()
         {
-            int inputNumber;
-            int convertedToValue;
-
-            if (args.Length < 2)
-            {
-                Console.WriteLine("Error! Incorrect format of the input data!");
-            }
-            else
-            {
-                try
-                {
-                    inputNumber = Int32.Parse(args[0]);
-                    convertedToValue = Int32.Parse(args[1]);
-                    if (convertedToValue > 1 && convertedToValue < 21)
-                    {
-                        Converter converter = new Converter();
-                        Console.WriteLine("Output: {0}", converter.ConvertTo(inputNumber, convertedToValue));
-                    }
-                    else
-                    {
-                        Console.WriteLine("Error! Incorrect format of the input data!");
-                    }
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-            }
+            Builder inputString = new Builder(Console.ReadLine());
+            Console.WriteLine(inputString.FindSequenceOfEvenIndex());
         }
     }
 }
+
