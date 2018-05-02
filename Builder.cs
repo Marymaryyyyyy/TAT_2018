@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Text;
 
-namespace Task_dev_2
+namespace Task_Dev2
 {
     /// <summary>
     /// This class finds in the string symbols with even indices
     /// </summary>
-    class Builder
+    public class Builder
     {
         private string inputString;
 
@@ -14,7 +14,7 @@ namespace Task_dev_2
         {
             inputString = line;
         }
-        
+
         /// <summary>
         /// This method builds the sequence of even indices
         /// </summary>

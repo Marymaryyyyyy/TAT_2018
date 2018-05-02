@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+ Task-dev_6
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +9,23 @@ using Task_dev_6.Implementations;
 
 namespace Task_dev_6
 {
+
+using System.Text;
+
+namespace Task_Dev2
+{
+    /// <summary>
+    /// This class is the entry point to the program
+    /// </summary>
+ master
     class EntryPoint
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The entry point to the program
+        /// </summary>
+        static void Main()
         {
+ Task-dev_6
            var products = new List<Product>();
            var key = new ConsoleKeyInfo();
 
@@ -92,8 +106,15 @@ namespace Task_dev_6
                     
              }
             
+
+            Builder inputString = new Builder(Console.ReadLine());
+            Console.WriteLine(inputString.FindSequenceOfEvenIndex());
+ master
         }
 
 
     }
 }
+ Task-dev_6
+
+master

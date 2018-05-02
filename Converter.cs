@@ -5,7 +5,7 @@ namespace Task_dev_3
     /// <summary>
     ///Converter converts the number in other notation system.
     /// </summary>
-    class Converter
+    public class Converter
     {
         private string convertedValue;
 
