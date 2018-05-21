@@ -1,14 +1,22 @@
-﻿using System;
+ using System;
+ Task_dev8
 using System.Collections.Generic;
 using System.IO;
 using Task_dev8.Commands;
 
 namespace Task_dev8
+
+using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
+
+namespace Task_dev9
+ master
 {
     class Program
     {
         static void Main(string[] args)
         {
+ Task_dev8
             try
             {
                 var users = new List<User>();
@@ -45,6 +53,18 @@ namespace Task_dev8
             {
                 Console.WriteLine(e.Message);
             }
+
+            Console.WriteLine("Enter login: ");
+            string login = Console.ReadLine();
+            Console.WriteLine("Enter password: ");
+            string password = Console.ReadLine();
+
+            LoginPage loginPage = new LoginPage();
+            loginPage.NewsPage(login, password);
+
+            NewsPage newsPage = new NewsPage();
+            newsPage.MessagesPage();
+ master
         }
 
     }
